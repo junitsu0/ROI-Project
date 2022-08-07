@@ -37,18 +37,18 @@ while mainmenu != 5:
 #income menu 
     if mainmenu == 1:
         incomemenu = int(int_input("""
-==================
-  Income Sources
-==================
- 1. Rent
- 2. Laundry
- 3. Storage
- 4. Misc
- 5. View
- 6. Main Menu      
-==================
-  Enter a number
-==================
+    ==================
+      Income Sources
+    ==================
+    1. Rent
+    2. Laundry
+    3. Storage
+    4. Misc
+    5. View
+    6. Main Menu      
+    ==================
+      Enter a number
+    ==================
 """))
 #each option exists in dictionary
 #misc items can be added to dictionary
@@ -117,35 +117,6 @@ while mainmenu != 5:
     elif option == 4:
         pass
 #exit program
-
-
-
-
-
-#Income
-input("Rental Income per unit")
-input("Laundry")
-input("Storage/Garage")
-input("Misc")
-
-#Expenses
-input("Tax")
-input("Insurance")
-input("Utilities")
-input("HOA")
-input("Yard/Snow")
-input("Management")
-input("Repairs")
-input("Vacancy")
-input("CapEx")
-input("Mortgage")
-
-#Investments
-input("down payment")
-input("closing costs")
-input("rehab")
-input("misc")
-
 
 
 
