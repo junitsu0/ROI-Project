@@ -1,13 +1,9 @@
-#import any?
-
-#====== LISTS n stuff ========
 income = {"rent":0, "laundry":0, "storage":0}
 expense = {"tax":0, "insurance":0, "utilities":0, "HOA":0, "yard":0, "management":0, "repairs":0, "vacancy":0, "CapEx":0, "Mortgage":0}
 util = {"water":0, "elec":0, "gas":0, "trash":0, "sewage":0}
 investment = {"downpayment":0, "closingcost":0, "rehab":0}
 #ledger = [{"income"}, {"expense"}, {"investment"}]
-cashflow = sum(income[x][1]) - sum(expense[y][1]) 
-ROI = cashflow / sum(investment[a][1])
+
 
 def int_input(prompt):#check for invalid string inputs
     while True:
@@ -71,121 +67,9 @@ while mainmenu != 5:
                 print(f"{income[incomeitem]} is now accounted for.")
         elif incomemenu == 5:
             print(income)
-        elif incomemenu != 6:
-            print("Enter a valid number please. ")
-            break
-#expense menu
-    elif option == 2:
-        expmenu = int(int_input("""
-==================
-  Expense Sources
-==================
- 1. Tax
- 2. Insurance
- 3. Utilities
- 4. HOA
- 5. Yard
- 5. Management
- 6. Repairs
- 7. Vacancy
- 8. CapEx
- 9. Mortgage
-10. Misc
-11. View
-12. Main Menu      
-==================
-  Enter a number
-==================
-"""))
-#investment menu
-    elif option == 3:
-        int(int_input("""
-==================
-   Investments
-==================
- 1. Down Payment
- 2. Closing Costs
- 3. Rehab Budget
- 4. Misc
- 5. View
- 6. Main Menu      
-==================
-  Enter a number
-==================
-"""))
-#summary
-    elif option == 4:
-        pass
-#exit program
-
-
-
-
-
-#Income
-input("Rental Income per unit")
-input("Laundry")
-input("Storage/Garage")
-input("Misc")
-
-#Expenses
-input("Tax")
-input("Insurance")
-input("Utilities")
-input("HOA")
-input("Yard/Snow")
-input("Management")
-input("Repairs")
-input("Vacancy")
-input("CapEx")
-input("Mortgage")
-
-#Investments
-input("down payment")
-input("closing costs")
-input("rehab")
-input("misc")
-
-
-
-
-
-
-#? create a dictionary of inputs to store each topic and answer ?
-#? equations pull from that dictionary the required matching information/key ?
-
-#====================
-#Inputs and Equations
-#====================
-#ROI = AnnualCashFlow / Total Investment
-
-#Incomes
-#-rent
-#-laundry
-#-storage
-#-misc
-
-#Expenses
-#-Tax
-#-Insurance
-#-Utilities
-#-water
-#-gas
-#-electric
-#-sewage
-#-trash
-#-HOA
-#-Yard/Snow
-#-Management
-#-Repairs
-#-Vacancy
-#-CapEx
-#-Mortgage
-
-#Monthly Cash Flow = Income - Expense
-
-#Investments
-#-down payment
-#-closing costs
-#-rehab
-#-misc
+        elif incomemenu != {1,2,3,4,5,6}:
+                print("Enter a valid number please. ")
+                
+else:
+    print("Goodbye")
+    exit
