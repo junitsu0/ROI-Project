@@ -197,20 +197,20 @@ while True:
     ==================
 """)
         if invmenu == 1:
-            cost = int_input("Enter the monthly amount per unit ")
+            cost = int_input("Enter the amount per unit ")
             investment["downpayment"] = cost
         elif invmenu == 2:
-            cost = int_input("Enter the monthly amount per unit ")
+            cost = int_input("Enter the amount per unit ")
             investment["closingcost"] = cost
         elif invmenu == 3:
-            cost = int_input("Enter the monthly amount per unit ")
+            cost = int_input("Enter the amount per unit ")
             investment["rehab"] = cost
         elif invmenu == 4:
             investitem = input("What item would you like to add? ")
             if investitem in investment:
                 print("Item is already accounted for.")
             else:
-                cost = int_input("Enter the monthly amount per unit ")
+                cost = int_input("Enter the amount per unit ")
                 investment[investitem] = cost
                 print(f"{investitem} is now accounted for.")
         elif invmenu == 5:
@@ -249,8 +249,9 @@ while True:
             print(f"Cash Flow ${cashflow}")
         elif summarymenu == 5:
             RetInv = cashflow / totalinvest
+            RetInvAnn = cashflow * 12 / totalinvest
             print(f"Monthly Return on Investment is {RetInv * 100}%")
-            print(f"Annual Return on Investment is {RetInv * 1200}%")
+            print(f"Annual Return on Investment is {RetInvAnn * 100}%")
         elif summarymenu != {1,2,3,4,5,6}:
             print("Enter a valid number please. ")
 #quit
