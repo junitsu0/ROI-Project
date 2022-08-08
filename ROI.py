@@ -256,6 +256,6 @@ while True:
 #quit
     else:
         print("""
-        Support my OnlyFans
+        Thank you for playing elaborate shopping cart
         """)
         break
