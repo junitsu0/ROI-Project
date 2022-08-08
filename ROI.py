@@ -239,7 +239,7 @@ while True:
             totalincome = 0 + sum(income.values())
             print(f"Total Income ${totalincome}")
         elif summarymenu == 2:
-            totalexpense = 0 + sum(expense.values() + sum(utility.values()))
+            totalexpense = 0 + sum(expense.values()) + sum(utility.values())
             print(f"Total Expenses ${totalexpense}")
         elif summarymenu == 3:
             totalinvest = 0 + sum(investment.values())
